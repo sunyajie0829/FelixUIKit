@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FelixTableView.h"
+#import "Classes/FelixTableView+Refresh.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) FelixTableView *tableView;
 @property (nonatomic,assign) int count;

@@ -31,7 +31,6 @@
 		24E1FE3E2213FC0700AF6DF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24E1FE452213FC2300AF6DF5 /* FelixTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixTableView.h; sourceTree = "<group>"; };
 		24E1FE462213FC2300AF6DF5 /* FelixTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixTableView.m; sourceTree = "<group>"; };
-		24E1FE482213FDB200AF6DF5 /* FelixPrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixPrefixHeader.h; sourceTree = "<group>"; };
 		24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FelixTableView+Refresh.h"; sourceTree = "<group>"; };
 		24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FelixTableView+Refresh.m"; sourceTree = "<group>"; };
 		846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.release.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +100,6 @@
 				24E1FE462213FC2300AF6DF5 /* FelixTableView.m */,
 				24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */,
 				24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */,
-				24E1FE482213FDB200AF6DF5 /* FelixPrefixHeader.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -383,7 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/FelixTableView/Classes/FelixPrefixHeader.h";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = FelixTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,7 +401,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/FelixTableView/Classes/FelixPrefixHeader.h";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = FelixTableView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

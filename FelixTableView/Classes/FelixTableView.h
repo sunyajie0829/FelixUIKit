@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 typedef void(^EmptyDataImageTapAction)(void);
 @interface FelixTableView : UITableView<DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 /**
