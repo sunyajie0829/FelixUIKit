@@ -15,6 +15,7 @@
 		24E1FE3F2213FC0700AF6DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE3E2213FC0700AF6DF5 /* main.m */; };
 		24E1FE472213FC2300AF6DF5 /* FelixTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE462213FC2300AF6DF5 /* FelixTableView.m */; };
 		24E1FE4E2214040800AF6DF5 /* FelixTableView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */; };
+		24E1FE772215395A00AF6DF5 /* FelixTableView+Pager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */; };
 		E56A21A88FBEED0125C4EBFF /* libPods-FelixTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,9 @@
 		24E1FE462213FC2300AF6DF5 /* FelixTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixTableView.m; sourceTree = "<group>"; };
 		24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FelixTableView+Refresh.h"; sourceTree = "<group>"; };
 		24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FelixTableView+Refresh.m"; sourceTree = "<group>"; };
+		24E1FE752215395A00AF6DF5 /* FelixTableView+Pager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FelixTableView+Pager.h"; sourceTree = "<group>"; };
+		24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FelixTableView+Pager.m"; sourceTree = "<group>"; };
+		24E1FE78221556E100AF6DF5 /* FelixUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixUIKit.h; sourceTree = "<group>"; };
 		846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.release.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.release.xcconfig"; sourceTree = "<group>"; };
 		B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FelixTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.debug.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,10 +100,13 @@
 		24E1FE5222150C1300AF6DF5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				24E1FE78221556E100AF6DF5 /* FelixUIKit.h */,
 				24E1FE452213FC2300AF6DF5 /* FelixTableView.h */,
 				24E1FE462213FC2300AF6DF5 /* FelixTableView.m */,
 				24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */,
 				24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */,
+				24E1FE752215395A00AF6DF5 /* FelixTableView+Pager.h */,
+				24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 			files = (
 				24E1FE342213FC0600AF6DF5 /* ViewController.m in Sources */,
 				24E1FE4E2214040800AF6DF5 /* FelixTableView+Refresh.m in Sources */,
+				24E1FE772215395A00AF6DF5 /* FelixTableView+Pager.m in Sources */,
 				24E1FE3F2213FC0700AF6DF5 /* main.m in Sources */,
 				24E1FE472213FC2300AF6DF5 /* FelixTableView.m in Sources */,
 				24E1FE312213FC0600AF6DF5 /* AppDelegate.m in Sources */,

@@ -8,8 +8,6 @@
 
 #import "FelixTableView.h"
 #import <MJRefresh/MJRefresh.h>
-NS_ASSUME_NONNULL_BEGIN
-
 @interface FelixTableView (Refresh)
 /**
  为tableView增加一个上拉刷新，可在block中设置上拉执行的动作
@@ -24,5 +22,3 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)endDropUpOrDropDownAnimation;
 @end
-
-NS_ASSUME_NONNULL_END

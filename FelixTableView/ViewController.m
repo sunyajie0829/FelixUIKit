@@ -7,51 +7,75 @@
 //
 
 #import "ViewController.h"
-#import "FelixTableView.h"
-#import "Classes/FelixTableView+Refresh.h"
+#import "Classes/FelixUIKit.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) FelixTableView *tableView;
-@property (nonatomic,assign) int count;
+@property (nonatomic,strong) NSMutableArray *dataList;
 @end
 
 @implementation ViewController
+{
+    int index;
+    NSMutableArray *serverData;
+}
 - (void)viewDidLoad {
-    self.count = 0;
+    index = 0;
+    serverData = [NSMutableArray array];
+    for (int i = 0; i < 95; i++) {
+        [serverData addObject:[NSString stringWithFormat:@"data %d",i]];
+    }
+    self.dataList = [NSMutableArray array];
     [super viewDidLoad];
     __weak typeof(self) weakself = self;
     self.tableView = [[FelixTableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain emptyDataImage:[UIImage imageNamed:@"1"] emptyDataTitle:nil loadingDataImage:[UIImage imageNamed:@"2"] emptyDataImageTapAction:^{
-        if(arc4random()%2){
-            weakself.count = 20;
-        }else{
-            weakself.count = 0;
-        }
-        weakself.tableView.isLoading = YES;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            weakself.tableView.isLoading = NO;
-            [weakself.tableView reloadData];
-        });
+        NSMutableArray *pageData = [NSMutableArray arrayWithArray:[weakself requestServerDataWithPage:self.tableView.minPage]];
+        [weakself.tableView processPageData:pageData page:self.tableView.minPage sourceData:weakself.dataList];
+        [weakself.tableView reloadData];
+        NSLog(@"refresh");
     }];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    [self.tableView addPagerWithPageSize:10 cachePagePoolSize:3];
     [self.tableView addPullUpAction:^{
-        NSLog(@"pull up");
+        NSArray *pageData = [NSMutableArray arrayWithArray:[weakself requestServerDataWithPage:weakself.tableView.maxPage+1]];
+        [weakself.tableView endDropUpOrDropDownAnimation];
+        if (pageData.count > 0)
+        {
+            NSLog(@"%ld",weakself.tableView.maxPage);
+            [weakself.tableView processPageData:pageData page:weakself.tableView.maxPage+1 sourceData:weakself.dataList];
+            NSLog(@"%ld",weakself.tableView.maxPage);
+            [weakself.tableView reloadData];
+            [weakself.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:weakself.dataList.count - pageData.count - 1 inSection:0] atScrollPosition:UITableViewScrollPositionBottom animated:NO];
+            NSLog(@"pull up");
+        }
     }];
     [self.tableView addPullDownAction:^{
-        NSLog(@"pull down");
+        NSArray *pageData = [NSMutableArray arrayWithArray:[weakself requestServerDataWithPage:weakself.tableView.minPage-1]];
+        [weakself.tableView endDropUpOrDropDownAnimation];
+        if (pageData.count > 0)
+        {
+            [weakself.tableView processPageData:pageData page:weakself.tableView.minPage-1 sourceData:weakself.dataList];
+            NSLog(@"pull down");
+            [weakself.tableView reloadData];
+        }
     }];
     self.tableView.rowHeight = 60;
     [self.view addSubview:self.tableView];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.count;
+    return self.dataList.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第%ld行，第%ld段",indexPath.row,indexPath.section];
+    cell.textLabel.text = self.dataList[indexPath.row];
     return cell;
 }
-
+- (NSArray *)requestServerDataWithPage:(NSInteger)page{
+    if (page > 10){return @[];}
+    if (page < 1){return @[];}
+    return [serverData subarrayWithRange:NSMakeRange((page-1)*10, MIN(10, serverData.count - (page-1)*10))];
+}
 @end

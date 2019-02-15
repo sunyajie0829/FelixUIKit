@@ -7,7 +7,6 @@
 //
 
 #import "FelixTableView+Refresh.h"
-
 @implementation FelixTableView (Refresh)
 - (void)addPullUpAction:(void (^)(void))pullUpAction{
     NSAssert(pullUpAction != nil, @"pull up action should not be nil");

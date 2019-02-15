@@ -7,7 +7,6 @@
 //
 
 #import "FelixTableView.h"
-
 @implementation FelixTableView
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]){
@@ -45,6 +44,9 @@
     self.emptyDataSetDelegate = self;
     self.emptyDataSetSource = self;
     self.tableFooterView = [[UIView alloc] init];
+    _cachedPages = [NSMutableDictionary dictionary];
+    _minPage = 1;
+    _maxPage = 1;
 }
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view{
     if (self.emptyDataImageTapAction){

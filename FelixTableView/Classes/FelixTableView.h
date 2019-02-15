@@ -10,6 +10,7 @@
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 typedef void(^EmptyDataImageTapAction)(void);
 @interface FelixTableView : UITableView<DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
+#pragma mark - 基础状态设置
 /**
  tableView数据源为空时的图片
  */
@@ -33,7 +34,7 @@ typedef void(^EmptyDataImageTapAction)(void);
 
 /**
  初始化一个tableview,需要添加上下拉刷新请直接 addPullUpAction/addPullDownAction
-
+ 
  @param frame tableview的Frame,也可使用自动布局
  @param emptyDataImage 数据为空时的图片
  @param emptyDataTitle 数据为空时的提示文字
@@ -54,4 +55,27 @@ typedef void(^EmptyDataImageTapAction)(void);
  @return 返回一个tableView
  */
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style emptyDataImage:(UIImage *)emptyDataImage emptyDataTitle:(NSAttributedString *)emptyDataTitle loadingDataImage:(UIImage *)loadingDataImage emptyDataImageTapAction:(void(^)(void))tapAction;
+
+#pragma mark - 分页相关的属性设置
+/**
+ tableView分页的单页数据量
+ */
+@property (nonatomic,assign,readonly) NSInteger pageSize;
+/**
+ tableView允许缓存的总页数
+ */
+@property (nonatomic,assign,readonly) NSInteger cachePagePoolSize;
+/**
+ tableView分页已经缓存的页数信息
+ */
+@property (nonatomic,strong,readonly) NSMutableDictionary<NSString *,NSArray *> *cachedPages;
+/**
+ tableView分页已缓存页的最小index
+ */
+@property (nonatomic,assign,readonly) NSInteger minPage;
+/**
+ tableView分页已缓存页的最大index
+ */
+@property (nonatomic,assign,readonly) NSInteger maxPage;
+
 @end
