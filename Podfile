@@ -1,6 +1,6 @@
 platform:ios,'11.0'
  
-target 'FelixTableView' do
+target 'FelixUIKit' do
     pod 'MJRefresh'
     pod 'DZNEmptyDataSet'
 end

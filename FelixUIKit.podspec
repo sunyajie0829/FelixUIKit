@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FelixTableView"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "TableView include pull down to refresh ,loading img,empty data img and so on"
 
   # This description is used to generate tags and improve search results.

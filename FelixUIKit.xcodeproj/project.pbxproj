@@ -17,10 +17,11 @@
 		24E1FE4E2214040800AF6DF5 /* FelixTableView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */; };
 		24E1FE772215395A00AF6DF5 /* FelixTableView+Pager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */; };
 		E56A21A88FBEED0125C4EBFF /* libPods-FelixTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */; };
+		F954D7EA644CDD9A92B68184 /* libPods-FelixUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24E1FE2C2213FC0600AF6DF5 /* FelixTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelixTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24E1FE2C2213FC0600AF6DF5 /* FelixUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelixUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E1FE2F2213FC0600AF6DF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24E1FE302213FC0600AF6DF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		24E1FE322213FC0600AF6DF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -37,8 +38,11 @@
 		24E1FE752215395A00AF6DF5 /* FelixTableView+Pager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FelixTableView+Pager.h"; sourceTree = "<group>"; };
 		24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FelixTableView+Pager.m"; sourceTree = "<group>"; };
 		24E1FE78221556E100AF6DF5 /* FelixUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixUIKit.h; sourceTree = "<group>"; };
+		6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FelixUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.release.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.release.xcconfig"; sourceTree = "<group>"; };
 		B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FelixTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C673EA653EBD7B9F8B6236 /* Pods-FelixUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUIKit.release.xcconfig"; path = "Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		F3A24D85E8067E817ECE7E1B /* Pods-FelixUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUIKit.debug.xcconfig"; path = "Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.debug.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E56A21A88FBEED0125C4EBFF /* libPods-FelixTableView.a in Frameworks */,
+				F954D7EA644CDD9A92B68184 /* libPods-FelixUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */,
+				6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -65,7 +71,7 @@
 		24E1FE232213FC0600AF6DF5 = {
 			isa = PBXGroup;
 			children = (
-				24E1FE2E2213FC0600AF6DF5 /* FelixTableView */,
+				24E1FE2E2213FC0600AF6DF5 /* FelixUIKit */,
 				24E1FE2D2213FC0600AF6DF5 /* Products */,
 				3AB1C3481A1B37732781C4B6 /* Pods */,
 				05E059CC3017970862869CD1 /* Frameworks */,
@@ -75,12 +81,12 @@
 		24E1FE2D2213FC0600AF6DF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24E1FE2C2213FC0600AF6DF5 /* FelixTableView.app */,
+				24E1FE2C2213FC0600AF6DF5 /* FelixUIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24E1FE2E2213FC0600AF6DF5 /* FelixTableView */ = {
+		24E1FE2E2213FC0600AF6DF5 /* FelixUIKit */ = {
 			isa = PBXGroup;
 			children = (
 				24E1FE2F2213FC0600AF6DF5 /* AppDelegate.h */,
@@ -94,7 +100,7 @@
 				24E1FE3D2213FC0700AF6DF5 /* Info.plist */,
 				24E1FE3E2213FC0700AF6DF5 /* main.m */,
 			);
-			path = FelixTableView;
+			path = FelixUIKit;
 			sourceTree = "<group>";
 		};
 		24E1FE5222150C1300AF6DF5 /* Classes */ = {
@@ -116,6 +122,8 @@
 			children = (
 				FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */,
 				846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */,
+				F3A24D85E8067E817ECE7E1B /* Pods-FelixUIKit.debug.xcconfig */,
+				E6C673EA653EBD7B9F8B6236 /* Pods-FelixUIKit.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -123,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24E1FE2B2213FC0600AF6DF5 /* FelixTableView */ = {
+		24E1FE2B2213FC0600AF6DF5 /* FelixUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24E1FE422213FC0700AF6DF5 /* Build configuration list for PBXNativeTarget "FelixTableView" */;
+			buildConfigurationList = 24E1FE422213FC0700AF6DF5 /* Build configuration list for PBXNativeTarget "FelixUIKit" */;
 			buildPhases = (
 				0178BD3095D611C228B757C6 /* [CP] Check Pods Manifest.lock */,
 				24E1FE282213FC0600AF6DF5 /* Sources */,
@@ -137,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = FelixTableView;
+			name = FelixUIKit;
 			productName = FelixTableView;
-			productReference = 24E1FE2C2213FC0600AF6DF5 /* FelixTableView.app */;
+			productReference = 24E1FE2C2213FC0600AF6DF5 /* FelixUIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 24E1FE272213FC0600AF6DF5 /* Build configuration list for PBXProject "FelixTableView" */;
+			buildConfigurationList = 24E1FE272213FC0600AF6DF5 /* Build configuration list for PBXProject "FelixUIKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24E1FE2B2213FC0600AF6DF5 /* FelixTableView */,
+				24E1FE2B2213FC0600AF6DF5 /* FelixUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -203,7 +211,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FelixTableView-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-FelixUIKit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -218,7 +226,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FelixTableView/Pods-FelixTableView-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -229,7 +237,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FelixTableView/Pods-FelixTableView-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -384,13 +392,13 @@
 		};
 		24E1FE432213FC0700AF6DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */;
+			baseConfigurationReference = F3A24D85E8067E817ECE7E1B /* Pods-FelixUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = FelixTableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FelixUIKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -404,13 +412,13 @@
 		};
 		24E1FE442213FC0700AF6DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */;
+			baseConfigurationReference = E6C673EA653EBD7B9F8B6236 /* Pods-FelixUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = FelixTableView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FelixUIKit/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		24E1FE272213FC0600AF6DF5 /* Build configuration list for PBXProject "FelixTableView" */ = {
+		24E1FE272213FC0600AF6DF5 /* Build configuration list for PBXProject "FelixUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E1FE402213FC0700AF6DF5 /* Debug */,
@@ -434,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24E1FE422213FC0700AF6DF5 /* Build configuration list for PBXNativeTarget "FelixTableView" */ = {
+		24E1FE422213FC0700AF6DF5 /* Build configuration list for PBXNativeTarget "FelixUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				24E1FE432213FC0700AF6DF5 /* Debug */,
