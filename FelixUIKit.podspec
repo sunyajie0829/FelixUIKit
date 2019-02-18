@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "FelixTableView"
-  spec.version      = "0.0.2"
+  spec.name         = "FelixUIKit"
+  spec.version      = "0.0.3"
   spec.summary      = "TableView include pull down to refresh ,loading img,empty data img and so on"
 
   # This description is used to generate tags and improve search results.
@@ -34,8 +34,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/sunyajie0829/FelixTableView.git", :tag => "#{spec.version}" }
-  spec.homepage     = "https://github.com/sunyajie0829/FelixTableView"
+  spec.source       = { :git => "https://github.com/sunyajie0829/FelixUIKit.git", :tag => "#{spec.version}" }
+  spec.homepage     = "https://github.com/sunyajie0829/FelixUIKit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "FelixTableView/Classes/*.{h,m}"
+  spec.source_files  = "FelixUIKit/Classes/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
