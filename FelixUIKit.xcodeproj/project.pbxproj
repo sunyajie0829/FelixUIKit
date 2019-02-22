@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245C6F6D221A7F510053FA27 /* FelixTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245C6F6C221A7F510053FA27 /* FelixTabBarController.m */; };
+		245C6F70221A7F760053FA27 /* FelixTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 245C6F6F221A7F760053FA27 /* FelixTabbarButton.m */; };
+		245C6F7A221BAA1A0053FA27 /* FelixPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245C6F79221BAA1A0053FA27 /* FelixPageViewController.m */; };
+		245C6F7D221BAB4B0053FA27 /* FelixPageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245C6F7C221BAB4B0053FA27 /* FelixPageContentViewController.m */; };
+		245C6F83221BAFE90053FA27 /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 245C6F82221BAFE90053FA27 /* CustomViewController.m */; };
 		24E1FE312213FC0600AF6DF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE302213FC0600AF6DF5 /* AppDelegate.m */; };
 		24E1FE342213FC0600AF6DF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE332213FC0600AF6DF5 /* ViewController.m */; };
 		24E1FE372213FC0600AF6DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24E1FE352213FC0600AF6DF5 /* Main.storyboard */; };
@@ -16,11 +21,20 @@
 		24E1FE472213FC2300AF6DF5 /* FelixTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE462213FC2300AF6DF5 /* FelixTableView.m */; };
 		24E1FE4E2214040800AF6DF5 /* FelixTableView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */; };
 		24E1FE772215395A00AF6DF5 /* FelixTableView+Pager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */; };
-		E56A21A88FBEED0125C4EBFF /* libPods-FelixTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */; };
 		F954D7EA644CDD9A92B68184 /* libPods-FelixUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		245C6F6B221A7F510053FA27 /* FelixTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixTabBarController.h; sourceTree = "<group>"; };
+		245C6F6C221A7F510053FA27 /* FelixTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixTabBarController.m; sourceTree = "<group>"; };
+		245C6F6E221A7F760053FA27 /* FelixTabbarButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixTabbarButton.h; sourceTree = "<group>"; };
+		245C6F6F221A7F760053FA27 /* FelixTabbarButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixTabbarButton.m; sourceTree = "<group>"; };
+		245C6F78221BAA1A0053FA27 /* FelixPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixPageViewController.h; sourceTree = "<group>"; };
+		245C6F79221BAA1A0053FA27 /* FelixPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixPageViewController.m; sourceTree = "<group>"; };
+		245C6F7B221BAB4B0053FA27 /* FelixPageContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixPageContentViewController.h; sourceTree = "<group>"; };
+		245C6F7C221BAB4B0053FA27 /* FelixPageContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FelixPageContentViewController.m; sourceTree = "<group>"; };
+		245C6F81221BAFE90053FA27 /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		245C6F82221BAFE90053FA27 /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
 		24E1FE2C2213FC0600AF6DF5 /* FelixUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FelixUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E1FE2F2213FC0600AF6DF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24E1FE302213FC0600AF6DF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,11 +53,8 @@
 		24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FelixTableView+Pager.m"; sourceTree = "<group>"; };
 		24E1FE78221556E100AF6DF5 /* FelixUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FelixUIKit.h; sourceTree = "<group>"; };
 		6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FelixUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.release.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.release.xcconfig"; sourceTree = "<group>"; };
-		B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FelixTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C673EA653EBD7B9F8B6236 /* Pods-FelixUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUIKit.release.xcconfig"; path = "Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		F3A24D85E8067E817ECE7E1B /* Pods-FelixUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixUIKit.debug.xcconfig"; path = "Target Support Files/Pods-FelixUIKit/Pods-FelixUIKit.debug.xcconfig"; sourceTree = "<group>"; };
-		FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FelixTableView.debug.xcconfig"; path = "Target Support Files/Pods-FelixTableView/Pods-FelixTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E56A21A88FBEED0125C4EBFF /* libPods-FelixTableView.a in Frameworks */,
 				F954D7EA644CDD9A92B68184 /* libPods-FelixUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,10 +72,51 @@
 		05E059CC3017970862869CD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B9551D7FF9A65F46BBA86E51 /* libPods-FelixTableView.a */,
 				6D1F7C71A70510903C4032C7 /* libPods-FelixUIKit.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		245C6F71221AB48B0053FA27 /* FelixTableView */ = {
+			isa = PBXGroup;
+			children = (
+				24E1FE452213FC2300AF6DF5 /* FelixTableView.h */,
+				24E1FE462213FC2300AF6DF5 /* FelixTableView.m */,
+				24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */,
+				24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */,
+				24E1FE752215395A00AF6DF5 /* FelixTableView+Pager.h */,
+				24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */,
+			);
+			path = FelixTableView;
+			sourceTree = "<group>";
+		};
+		245C6F72221AB49E0053FA27 /* FelixTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				245C6F6B221A7F510053FA27 /* FelixTabBarController.h */,
+				245C6F6C221A7F510053FA27 /* FelixTabBarController.m */,
+			);
+			path = FelixTabBarController;
+			sourceTree = "<group>";
+		};
+		245C6F73221AB4FE0053FA27 /* FelixButton */ = {
+			isa = PBXGroup;
+			children = (
+				245C6F6E221A7F760053FA27 /* FelixTabbarButton.h */,
+				245C6F6F221A7F760053FA27 /* FelixTabbarButton.m */,
+			);
+			path = FelixButton;
+			sourceTree = "<group>";
+		};
+		245C6F77221BA9F10053FA27 /* FelixPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				245C6F78221BAA1A0053FA27 /* FelixPageViewController.h */,
+				245C6F79221BAA1A0053FA27 /* FelixPageViewController.m */,
+				245C6F7B221BAB4B0053FA27 /* FelixPageContentViewController.h */,
+				245C6F7C221BAB4B0053FA27 /* FelixPageContentViewController.m */,
+			);
+			path = FelixPageViewController;
 			sourceTree = "<group>";
 		};
 		24E1FE232213FC0600AF6DF5 = {
@@ -93,6 +144,8 @@
 				24E1FE302213FC0600AF6DF5 /* AppDelegate.m */,
 				24E1FE322213FC0600AF6DF5 /* ViewController.h */,
 				24E1FE332213FC0600AF6DF5 /* ViewController.m */,
+				245C6F81221BAFE90053FA27 /* CustomViewController.h */,
+				245C6F82221BAFE90053FA27 /* CustomViewController.m */,
 				24E1FE5222150C1300AF6DF5 /* Classes */,
 				24E1FE352213FC0600AF6DF5 /* Main.storyboard */,
 				24E1FE382213FC0700AF6DF5 /* Assets.xcassets */,
@@ -107,12 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				24E1FE78221556E100AF6DF5 /* FelixUIKit.h */,
-				24E1FE452213FC2300AF6DF5 /* FelixTableView.h */,
-				24E1FE462213FC2300AF6DF5 /* FelixTableView.m */,
-				24E1FE4C2214040800AF6DF5 /* FelixTableView+Refresh.h */,
-				24E1FE4D2214040800AF6DF5 /* FelixTableView+Refresh.m */,
-				24E1FE752215395A00AF6DF5 /* FelixTableView+Pager.h */,
-				24E1FE762215395A00AF6DF5 /* FelixTableView+Pager.m */,
+				245C6F77221BA9F10053FA27 /* FelixPageViewController */,
+				245C6F73221AB4FE0053FA27 /* FelixButton */,
+				245C6F72221AB49E0053FA27 /* FelixTabBarController */,
+				245C6F71221AB48B0053FA27 /* FelixTableView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -120,8 +171,6 @@
 		3AB1C3481A1B37732781C4B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA98A1316388FD7240D3BBFF /* Pods-FelixTableView.debug.xcconfig */,
-				846B48F7DC78979440F8A9D9 /* Pods-FelixTableView.release.xcconfig */,
 				F3A24D85E8067E817ECE7E1B /* Pods-FelixUIKit.debug.xcconfig */,
 				E6C673EA653EBD7B9F8B6236 /* Pods-FelixUIKit.release.xcconfig */,
 			);
@@ -247,11 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245C6F7D221BAB4B0053FA27 /* FelixPageContentViewController.m in Sources */,
 				24E1FE342213FC0600AF6DF5 /* ViewController.m in Sources */,
 				24E1FE4E2214040800AF6DF5 /* FelixTableView+Refresh.m in Sources */,
+				245C6F83221BAFE90053FA27 /* CustomViewController.m in Sources */,
 				24E1FE772215395A00AF6DF5 /* FelixTableView+Pager.m in Sources */,
 				24E1FE3F2213FC0700AF6DF5 /* main.m in Sources */,
 				24E1FE472213FC2300AF6DF5 /* FelixTableView.m in Sources */,
+				245C6F6D221A7F510053FA27 /* FelixTabBarController.m in Sources */,
+				245C6F70221A7F760053FA27 /* FelixTabbarButton.m in Sources */,
+				245C6F7A221BAA1A0053FA27 /* FelixPageViewController.m in Sources */,
 				24E1FE312213FC0600AF6DF5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +453,7 @@
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FelixUIKit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -419,7 +473,7 @@
 				DEVELOPMENT_TEAM = Q68RC3S3R9;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "$(SRCROOT)/FelixUIKit/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

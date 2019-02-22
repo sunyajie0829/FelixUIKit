@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Classes/FelixUIKit.h"
+#import "CustomViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) FelixTableView *tableView;
 @property (nonatomic,strong) NSMutableArray *dataList;
@@ -19,6 +20,20 @@
     NSMutableArray *serverData;
 }
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    [self testPageViewController];
+//    [self testTableView];
+//    [self testTabbarController];
+}
+- (void)testPageViewController{
+    FelixPageViewController *pvc = [[FelixPageViewController alloc] initWithTitles:@[@"hello",@"world",@"dd",@"fs",@"helloword",@"pagecontroller",@"page",@"nice",@"ok",@"te"] titleHeight:80 titleColor:[UIColor lightGrayColor] selTitleColor:[UIColor redColor] controllerClassList:@[[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class],[CustomViewController class]]];
+    [self addChildViewController:pvc];
+    [self.view addSubview:pvc.view];
+//    [pvc.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.bottom.left.right.equalTo(self.view);
+//    }];
+}
+- (void)testTableView{
     index = 0;
     serverData = [NSMutableArray array];
     for (int i = 0; i < 95; i++) {

@@ -7,16 +7,26 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Classes/FelixUIKit.h"
+#import "CustomViewController.h"
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    FelixTabBarController *tc = [[FelixTabBarController alloc] initWithTitles:@[@"主页",@"",@"我的"] titleFont:[UIFont systemFontOfSize:13] titleColor:[UIColor grayColor] selTitleColor:[UIColor redColor] imageNames:@[@"3-0",@"3-0",@"3-0"] selectedImageNames:@[@"3",@"3",@"3"]];
+//    tc.tabBarIV.backgroundColor = [UIColor whiteColor];
+//    tc.viewControllers = @[[UIViewController new],[UIViewController new],[UIViewController new]];
+//    FelixPageViewController *pvc = [[FelixPageViewController alloc] initWithTitles:@[@"hello",@"world",@"dd",@"fs",@"helloword",@"pagecontroller",@"page",@"nice",@"ok",@"te"] titleHeight:80 titleColor:[UIColor lightGrayColor] selTitleColor:[UIColor redColor] controllerClass:[CustomViewController class]];
+//    [self.view addSubview:pvc.view];
+//    [pvc.view mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.bottom.left.right.equalTo(self.view);
+//    }];
+//    self.window.rootViewController = pvc;
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

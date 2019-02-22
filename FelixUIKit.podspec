@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FelixUIKit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "TableView include pull down to refresh ,loading img,empty data img and so on"
 
   # This description is used to generate tags and improve search results.
@@ -90,11 +90,23 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "FelixUIKit/Classes/*.{h,m}"
+  spec.source_files  = "FelixUIKit/Classes/**/*"
   # spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
+    # spec.public_header_files = "FelixUIKit/Classes/*.h"
+    #   #-------------------------文件分级-------------------------#
+    #   spec.subspec 'FelixTableView' do |ss|
+    #   ss.source_files = "FelixUIKit/Classes/FelixTableView/**/*"
+    #   end
+    #   spec.subspec 'FelixButton' do |ss|
+    #   ss.source_files = "FelixUIKit/Classes/FelixButton/**/*"
+    #   end
+    #   spec.subspec 'FelixTabBarController' do |ss|
+    #   ss.dependency 'FelixUIKit/FelixButton'
+    #   ss.source_files = "FelixUIKit/Classes/FelixTabBarController/**/*"
+    #   end
+    #   spec.subspec 'FelixPageViewController' do |ss|
+    #   ss.source_files = "FelixUIKit/Classes/FelixPageViewController/**/*"
+    #   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -134,5 +146,6 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency 'MJRefresh', '~> 3.1.15.7'
   spec.dependency 'DZNEmptyDataSet', '~> 1.8.1'
-
+  spec.dependency 'JXCategoryView', '~> 1.2.5'
+  spec.dependency 'Masonry', '~> 1.1.0'
 end
